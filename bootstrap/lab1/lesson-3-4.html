@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PS44284 - Chau Nhat Duy - Lesson 3 Lab 1 | Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="row bg-warning p-1 fixed-top">
+            <p class="student">PS44284 - Châu Nhật Duy</p>
+        </div>
+        <div class="row bg-primary">
+            <nav class="navbar navbar-expand-sm navbar-light bg-light mt-5">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                        <img src="./img/logo-energy-pilates.png" alt="Bootstrap" width="150px">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapsibleNavbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                        <ul class="navbar-nav ms-0 me-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><i class="fa-solid fa-list-ul"></i> Bài viết</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><i class="fa-solid fa-video"></i> Video</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><i class="fa-solid fa-circle-info"></i> Giới thiệu</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><i class="fa-solid fa-calendar"></i> Sự kiện</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle text-success" href="#" role="button"
+                                    data-bs-toggle="dropdown">
+                                    <i class="fa-solid fa-user"></i> Tài khoản
+                                </a>
+                                <ul class="dropdown-menu rounded-0 p-0">
+                                    <li><a class="dropdown-item " href="#">Đăng nhập</a></li>
+                                    <li><a class="dropdown-item" href="#">Quên mật khẩu</a></li>
+                                    <li><a class="dropdown-item" href="#">Đăng ký thành viên</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                        <!-- Bên phải -->
+                        <ul class="navbar-nav">
+
+                            <li class="nav-item">
+                                <a class="nav-link">Tiếng Việt</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link">Tiếng Anh</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <section class="row">
+            <aside class="col-sm-4 border-dark">
+                <h2 class="text-info mb-3">About me</h2>
+                <div class="card blog bg-light">
+                    <img src="./img/anime.jpg" alt="Avatar" class="rounded-circle mx-auto d-block mt-5" width="200"
+                        height="200">
+                    <div class="card-body">
+                        <h5 class="card-title">Introduction</h5>
+                        <p class="card-text">My fullname is Chau Nhat Duy. You can call me 'Dyu'. My major is Software
+                            Development. From Ho Chi Minh City.</p>
+                    </div>
+                </div>
+
+                <h3 class="text-info mt-2">Chuyên mục</h3>
+                <ul class="list-group mb-2">
+                    <li
+                        class="list-group-item active text-black bg-info d-flex justify-content-between align-items-center">
+                        <a href="#" class="nav-link">Education</a>
+                        <span class="badge bg-primary rounded-pill">6</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        <a href="#" class="nav-link">Project</a>
+                        <span class="badge bg-primary rounded-pill">7</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        <a href="#" class="nav-link">Certificate</a>
+                        <span class="badge bg-primary rounded-pill">9</span>
+                    </li>
+                </ul>
+            </aside>
+            <article class="col-sm-8">
+                <h2 class="text-info mb-3">My blog</h2>
+                <div class="row  border border-black p-2 bg-light rounded-2">
+                    <div class="col-sm-6 mt-2">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold border-bottom border-dark p-2">
+                                    47 Project GitHub Nhưng Không Viết Được 1 Dòng Code?
+                                    <i class="fa-solid fa-comment ms-1 text-muted"></i> 16
+                                </h5>
+                                <img src="./img/thoat-khoi-tutorial-hell.png" class="img-fluid rounded mb-3"
+                                    alt="tutorial-hell">
+                                <p class="card-text text-secondary">
+                                    Có một sự thật phũ phàng bạn nên biết rằng: Nếu bạn tự học lập trình một mình từ con
+                                    số 0 và không có ai bên cạnh hỗ
+                                    trợ, thì những khoá học video hoàn toàn không phù hợp!...
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 mt-2">
+                        <div class="card p-4">
+                            <div class="row">
+                                <div class="col-4">
+                                    <img src="./img/4-lop-bao-mat-api-300x300.png"
+                                        class="img-thumbnail rounded-0 border-0">
+                                </div>
+                                <div class="col-8">
+                                    <h6 class="fw-semibold">4 Lớp Bảo Mật API Bắt Buộc Phải Có Khi Code Backend</h6>
+                                    <p class="text-muted"><i class="fa-solid fa-comment"></i> 30</p>
+                                </div>
+                            </div>
+                            <div class="row mb-1">
+                                <div class="col-4">
+                                    <img src="./img/lo-trinh-lap-trinh-fullstack-2025-300x300.png"
+                                        class="img-thumbnail rounded-0 border-0">
+                                </div>
+                                <div class="col-8">
+                                    <h6 class="fw-semibold">Dẹp Hết Đi! Đây mới là Lộ Trình Full Stack đi làm 2025</h6>
+                                    <p class="text-muted"><i class="fa-solid fa-comment"></i> 28</p>
+                                </div>
+                            </div>
+                            <div class="row mb-1">
+                                <div class="col-4">
+                                    <img src="./img/tac-hai-nghiem-trong-khoa-hoc-video-300x300.png"
+                                        class=" img-thumbnail rounded-0 border-0">
+                                </div>
+                                <div class="col-8">
+                                    <h6 class="fw-semibold">Tác Hại Nghiêm Trọng Của Khoá Học Video</h6>
+                                    <p class="text-muted"><i class="fa-solid fa-comment"></i> 15</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-4">
+                                    <img src="./img/lo-trinh-hoc-javascript-300x300.png"
+                                        class="img-thumbnail rounded-0 border-0">
+                                </div>
+                                <div class="col-8">
+                                    <h6 class="fw-semibold">Cách thống trị React, Angular, NodeJS,</h6>
+                                    <p class="text-muted"><i class="fa-solid fa-comment"></i> 12</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center mt-3">
+                        <button type="button" class="btn btn-info text-dark px-2">Xem thêm</button>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </div>
+    <footer class="row bg-dark text-white p-3 container-fluid justify-content-center align-items-center">©Copyright by
+        Dyu Dev</footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/f4e3fc99b3.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
