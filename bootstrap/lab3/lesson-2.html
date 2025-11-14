@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 3 Bootstrap 5</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f4e3fc99b3.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-sm navbar-light bg-info bg-opacity-10">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="./img/logo-energy-pilates.png" alt="Bootstrap" width="150px">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav ms-0 me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fa-solid fa-list-ul"></i> Bài viết</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fa-solid fa-video"></i> Video</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fa-solid fa-circle-info"></i> Giới thiệu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fa-solid fa-calendar"></i> Sự kiện</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                            <i class="fa-solid fa-user"></i> Tài khoản
+                        </a>
+                        <ul class="dropdown-menu rounded-0 p-0">
+                            <li><a class="dropdown-item " href="#">Đăng nhập</a></li>
+                            <li><a class="dropdown-item" href="#">Quên mật khẩu</a></li>
+                            <li><a class="dropdown-item" href="#">Đăng ký thành viên</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <ul class="navbar-nav">
+
+                    <li class="nav-item">
+                        <a class="nav-link">Tiếng Việt</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link">Tiếng Anh</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./img/banner1.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/banner2.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/banner3.jpg" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+
+        </div>
+        <section class="row mt-4">
+            <aside class="col-sm-4 border-dark">
+                <h2 class="text-info mb-3">Về tôi</h2>
+                <div class="card blog bg-light">
+                    <img src="./img/avatar.png" alt="Avatar" class="rounded-circle">
+                    <div class="card-body">
+                        <h5 class="card-title">Giới thiệu bản thân</h5>
+                        <p class="card-text">TS. Trần Hoàng. Tổ chức Tư vấn sức khỏe quốc tế độc lập</p>
+                        <p class="card-text">Châm ngôn: Ta không được chọn nơi mình sinh ra, nhưng ta được chọn cách
+                            mình sẽ sống</p>
+                    </div>
+                </div>
+            </aside>
+            <article class="col-sm-8 mb-5">
+                <h2 class="text-info mb-3">Blog của tôi</h2>
+                <div class="row border border-black bg-light rounded-2">
+                    <div class="col-sm-6 mt-2">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold border-bottom border-dark p-2">
+                                    Phương pháp tập Pilates giúp phục hồi chấn thương cột sống
+                                    <i class="fa-solid fa-comment ms-1 text-muted"></i> 16
+                                </h5>
+                                <img src="./img/tap-piltes.jpg" class="img-fluid rounded mb-3" alt="tutorial-hell">
+                                <p class="card-text text-secondary">
+                                    Ngoài việc giúp duy trì vóc dáng, cải thiện sự linh hoạt, dẻo dai cho người
+                                    tập, Pilates giúp cơ bắp và các khớp mọc dài hơn, kéo giãn hơn...
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 mt-2">
+                        <div class="card p-2">
+                            <div class="row">
+                                <div class="col-4">
+                                    <img src="./img/corevalue.jpg" class="img-thumbnail rounded-0 border-0">
+                                </div>
+                                <div class="col-8">
+                                    <h6 class="fw-semibold">Biết ơn đời, đời sẽ thương ta</h6>
+                                    <p class="text-muted"><i class="fa-solid fa-comment"></i> 30</p>
+                                </div>
+                            </div>
+                            <div class="row mb-1">
+                                <div class="col-4">
+                                    <img src="./img/orange_300x300.jpg" class="img-thumbnail rounded-0 border-0">
+                                </div>
+                                <div class="col-8">
+                                    <h6 class="fw-semibold">9 tác dụng tuyệt vời của quả cam</h6>
+                                    <p class="text-muted"><i class="fa-solid fa-comment"></i> 28</p>
+                                </div>
+                            </div>
+                            <div class="row mb-1">
+                                <div class="col-4">
+                                    <img src="./img/sesameoil_300x300.jpg" class=" img-thumbnail rounded-0 border-0">
+                                </div>
+                                <div class="col-8">
+                                    <h6 class="fw-semibold">10 công dụng bất ngờ từ dầu dừa</h6>
+                                    <p class="text-muted"><i class="fa-solid fa-comment"></i> 15</p>
+                                </div>
+                            </div>
+                            <div class="row mb-1">
+                                <div class="col-4">
+                                    <img src="./img/spinach_300x300.jpg" class="img-thumbnail rounded-0 border-0">
+                                </div>
+                                <div class="col-8">
+                                    <h6 class="fw-semibold">Lợi ích khi ăn rau mầm mỗi ngày</h6>
+                                    <p class="text-muted"><i class="fa-solid fa-comment"></i> 12</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center mt-3 mb-3">
+                        <button type="button" class="btn btn-info text-dark px-2">Xem thêm</button>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <section class="row">
+            <div class="col-sm-4">1</div>
+            <div class="col-sm-8">2</div>
+        </section>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
