@@ -24,8 +24,6 @@
 
 ### 🎯 Mục tiêu dự án
 
-### 🎯 Mục tiêu dự án
-
 - ✅ Học **JavaScript fundamentals** từ cơ bản đến nâng cao (8 Labs)
 - ✅ **ASM Practice**: Luyện tập Vue.js 3 với Composition API
 - ✅ **GD1**: Bài tập chính thức giai đoạn 1 (HTML/CSS/JS + Bootstrap)
