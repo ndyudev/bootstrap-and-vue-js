@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Tutorial - Form | Slider 2 - PS44284 | Chau Nhat Duy</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+</head>
+
+<body>
+    <style>
+        .title {
+            color: red;
+            margin-top: 20px;
+        }
+    </style>
+    <div class="container mb-5">
+        <!-- Form -->
+        <h2 class="title">Form - Page 11</h2>
+        <div class="mb-3">
+            <label class="form-label">
+                Email address
+            </label>
+            <input type="email" class="form-control" placeholder="name@example.com">
+        </div>
+        <div class="mb-3">
+            <label class="form-label">
+                Example textarea
+            </label>
+            <textarea class="form-control" rows="3"></textarea>
+        </div>
+        <hr />
+        <!-- Input -->
+        <h2 class="title">Input - Page 12</h2>
+        <form>
+            <input type="text" class="form-control form-control-lg" placeholder="Large input">
+            <input type="text" class="form-control mt-3" placeholder="Normal input">
+            <input type="text" class="form-control form-control-sm mt-3" placeholder="Small input">
+        </form>
+        <hr>
+        <!-- Input -->
+        <h2 class="title">Input ( disabled - readonly ) - Page 14</h2>
+        <form>
+            <input type="text" class="form-control" placeholder="Normal input">
+            <input type="text" class="form-control" placeholder="Disabled input" disabled>
+            <input type="text" class="form-control" placeholder="Readonly input" readonly>
+        </form>
+        <hr>
+        <!-- Input -->
+        <h2 class="title">Plain text Inputs: Tạo input với dữ liệu đầu vào không có viền border - Page 15</h2>
+        <input type="text" class="form-control-plaintext" placeholder="input data here">
+        <hr>
+        <!-- Input -->
+        <h2 class="title">Color picker: Bộ chọn màu với class .form-control-color - Page 15</h2>
+        <input type="color" class="form-control form-control-color" id="myColor" value="#CCCCCC" title="Choose a color">
+        <hr>
+
+        <!-- File Input -->
+        <h2 class="title">File input - Page 16</h2>
+        <form>
+            <div class="mb-3">
+                <label class="form-label">Chọn 1 file</label>
+                <input class="form-control" type="file">
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Chọn nhiều file</label>
+                <input class="form-control" type="file" multiple>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Đầu vào file bị vô hiệu hóa</label>
+                <input class="form-control" type="file" disabled>
+            </div>
+        </form>
+        <hr>
+        <!-- Select Menu -->
+        <h2 class="title">Select menu được sử dụng với mục đích tạo nhiều lựa chọn cho người dùng chọn với class
+            .form-select - Page 17</h2>
+        <select class="form-select">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+        </select>
+        <hr>
+        <!-- Select Menu -->
+        <h2 class="title">Bootstrap cũng hỗ trợ kiểu danh sách dữ liệu, đây là danh sách các tùy chọn được xác định
+            trước cho input - Page 18</h2>
+        <form>
+            <label class="form-label">Chọn trình duyệt từ danh sách:</label>
+            <input class="form-control" list="browsers" name="browser">
+            <datalist id="browsers">
+                <option value="Edge" />
+                <option value="Firefox" />
+                <option value="Chrome" />
+                <option value="Opera" />
+                <option value="Safari" />
+            </datalist>
+            <button class="btn btn-primary mt-2">Submit</button>
+        </form>
+        <hr>
+        <!-- Checkbox Menu -->
+        <h2 class="title">Hộp kiểm checkbox: chọn nhiều tùy chọn trong một danh sách các tùy chọn - Page 19</h2>
+        <form>
+            <div class="form-check">
+                <input type="checkbox" class="form-check-input" checked>
+                <label class="form-check-label">Option 1</label>
+            </div>
+            <div class="form-check">
+                <input type="checkbox" class="form-check-input">
+                <label class="form-check-label">Option 2</label>
+            </div>
+            <div class="form-check">
+                <input type="checkbox" class="form-check-input" disabled>
+                <label class="form-check-label">Option 3</label>
+            </div>
+        </form>
+        <hr>
+        <!-- Radio Box -->
+        <h2 class="title">Radio: Nút radio được sử dụng trong trường hợp chỉ chọn một lựa chọn từ danh sách các tùy
+        chọn sẵn có. - Page 20</h2>
+        <form>
+            <div class="form-check">
+                <input name="op1" type="radio" class="form-check-input" checked>
+                <label class="form-check-label">Option 1</label>
+            </div>
+            <div class="form-check">
+                <input name="op1" type="radio" class="form-check-input">
+                <label class="form-check-label">Option 2</label>
+            </div>
+            <div class="form-check">
+                <input name="op1" type="radio" class="form-check-input" disabled>
+                <label class="form-check-label">Option 3</label>
+            </div>
+            <hr>
+            <!-- Range Box -->
+            <h2 class="title">Range: sử dụng class .form-range để tạo kiểu phạm vi cho phần tử input với type="range. - Page 21</h2>
+            <label for="customRange1" class="form-label">Phạm vi</label>
+            <input type="range" class="form-range" id="customRange1" step="100" min="0" max="100" value="30">
+            <hr>
+            <!-- Input group -->
+            <h2 class="title">Class .input-group tạo một vùng bổ sung biểu tượng, văn bản hoặc nút ở phía trước hoặc
+            phía sau input dưới dạng "văn bản trợ giúp".- Page 22</h2>
+            <form>
+                <div class="input-group mb-3">
+                    <span class="input-group-text">@</span>
+                    <input type="text" class="form-control" placeholder="Nhập tên">
+                </div>
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="Email">
+                    <span class="input-group-text">@example.com</span>
+                </div>
+            </form>
+            <hr>
+            <!-- Validate form -->
+            <h2 class="title">Form validation: cung cấp phản hồi xác thực dữ liệu có hợp lệ thông qua biểu mẫu HTML5
+            kết hợp Javascript- Page 27</h2>
+            <form class="was-validated">
+                <div class="mb-3 mt-3">
+                    <label for="uname" class="form-label">Họ và tên:</label>
+                    <input type="text" class="form-control" id="uname" placeholder="Nhập họ tên" required>
+                    <div class="valid-feedback">Hợp lệ</div>
+                    <div class="invalid-feedback">Vui lòng điền vào trường này</div>
+                </div>
+                <div class="mb-3">
+                    <label for="pwd" class="form-label">Mật khẩu:</label>
+                    <input type="password" class="form-control" id="pwd" placeholder="Nhập mật khẩu" required>
+                    <div class="valid-feedback">Hợp lệ</div>
+                    <div class="invalid-feedback">Vui lòng điền vào trường này</div>
+                </div>
+                <div class="form-check mb-3">
+                    <input class="form-check-input" type="checkbox" id="myCheck" required>
+                    <label class="form-check-label" for="myCheck">Đồng ý với các điều khoản</label>
+                    <div class="valid-feedback">Hợp lệ</div>
+                    <div class="invalid-feedback">Tick vào hộp thoại để xác nhận</div>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </form>
+    </div>
+    <!-- Content here -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/f4e3fc99b3.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

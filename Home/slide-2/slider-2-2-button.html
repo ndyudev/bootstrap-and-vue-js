@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Tutorial - Button  | Slider 2 - PS44284 | Chau Nhat Duy</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <style>
+        .title {
+            color: red;
+            margin-top: 20px;
+        }
+    </style>
+    <div class="container mb-5">
+        <!-- Form -->
+        <h2 class="title">Button - Page 31</h2>
+        <div class="pm3">
+            <button type="button" class="btn">Basic</button>
+            <button type="button" class="btn btn-primary">Primary</button>
+            <button type="button" class="btn btn-secondary">Secondary</button>
+            <button type="button" class="btn btn-success">Success</button>
+            <button type="button" class="btn btn-info">Info</button>
+            <button type="button" class="btn btn-warning">Warning</button>
+            <button type="button" class="btn btn-danger">Danger</button>
+            <button type="button" class="btn btn-dark">Dark</button>
+            <button type="button" class="btn btn-light">Light</button>
+            <button type="button" class="btn btn-link">Link</button>
+        </div>
+        <hr>
+        <div class="mb3">
+            <h2 class="title">Button Outline: BS5 cũng cung cấp dạng nút có viền - Page 32</h2>
+            <button type="button" class="btn btn-outline-primary">Primary</button>
+            <button type="button" class="btn btn-outline-secondary">Secondary</button>
+            <button type="button" class="btn btn-outline-success">Success</button>
+            <button type="button" class="btn btn-outline-info">Info</button>
+            <button type="button" class="btn btn-outline-warning">Warning</button>
+            <button type="button" class="btn btn-outline-danger">Danger</button>
+            <button type="button" class="btn btn-outline-dark">Dark</button>
+            <button type="button" class="btn btn-outline-light text-dark">Light</button>
+        </div>
+        <hr />
+        <div class="mb3">
+            <h2 class="title">Spinner Button: - Page 33</h2>
+            <button class="btn btn-primary">
+                <span class="spinner-border spinner-border-sm"></span>
+            </button>
+            <button class="btn btn-primary">
+                <span class="spinner-border spinner-border-sm"></span> Loading..
+            </button>
+            <button class="btn btn-primary" disabled>
+                <span class="spinner-border spinner-border-sm"></span> Loading..
+            </button>
+            <button class="btn btn-primary" disabled>
+                <span class="spinner-grow spinner-grow-sm"></span> Loading..
+            </button>
+        </div>
+        <hr>
+        <div class="mb3">
+            <h2 class="title">Menu thả xuống là menu cho phép người dùng chọn một giá trị từ danh sách được xác định
+                trước - Page 34</h2>
+            <div class="dropdown">
+                <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">Dropdown button
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Link 1</a></li>
+                    <li><a class="dropdown-item" href="#">Link 2</a></li>
+                    <li><a class="dropdown-item" href="#">Link 3</a></li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Another link</a></li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <div class="mb3">
+            <h2 class="title">BS5 cho phép nhóm một loạt nút lại với nhau (trên một dòng) thành một nhóm nút với class
+                .btn-group: - Page 35</h2>
+            <div class="btn-group">
+                <button type="button" class="btn btn-primary">Apple</button>
+                <button type="button" class="btn btn-primary">Samsung</button>
+                <button type="button" class="btn btn-primary">Sony</button>
+            </div>
+            <h2 class="title">Ngoài ra BS5 cũng hỗ trợ các nhóm nút dọc với class .btn-group-vertical - Page 35</h2>
+            <div class="btn-group-vertical">
+                <button type="button" class="btn btn-primary">Apple</button>
+                <button type="button" class="btn btn-primary">Samsung</button>
+                <button type="button" class="btn btn-primary">Sony</button>
+            </div>
+            <h2 class="title">KẾT HỢP BTN GROUP VÀ DROPDOW - Page 36</h2>
+            <div class="btn-group">
+                <button type="button" class="btn btn-primary">Apple</button>
+                <button type="button" class="btn btn-success">Samsung</button>
+                <div class="btn-group">
+                    <button type="button" class="btn btn-warning dropdown-toggle" data-bs-toggle="dropdown">
+                        Sony
+                    </button>
+                    <ul class="dropdown-menu rounded-0 p-0">
+                        <li><a class="dropdown-item" href="#">Tablet</a></li>
+                        <li><a class="dropdown-item" href="#">Smartphone</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="mb3">
+            <h2 class="title">Tab trong BS5 là dạng danh sách nằm ngang được phân làm từng khối riêng biệt, vừa hiển
+                thị được nhiều nội dung hơn mà còn tiết kiệm được diện tích trên một trang. Ví dú - Page 38</h2>
+            <!-- Nav tabs -->
+            <ul class="nav nav-tabs" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active" data-bs-toggle="tab" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-bs-toggle="tab" href="#contact">Contact</a>
+                </li>
+            </ul>
+            <!-- Tab panes -->
+            <div class="tab-content">
+                <div id="home" class="container tab-pane active"><br>
+                    <p>Nội dung tab Home</p>
+                </div>
+                <div id="contact" class="container tab-pane fade"><br>
+                    <p>Nội dung tab Contact</p>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="mb3">
+            <h2 class="title">Hộp thoại Modal: là một hộp thoại/cửa sổ bật lên được hiển thị ở đầu trang hiện tại. Ví
+                dụ- Page 41</h2>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+                Mở hộp thoại</button>
+            <!-- The Modal -->
+            <div class="modal" id="myModal">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <!-- Modal Header -->
+                        <div class="modal-header">
+                            <h4 class="modal-title">Tiêu đề</h4>
+                            <button class="btn-close" data-bs-dismiss="modal"></button>
+                        </div>
+                        <!-- Modal body -->
+                        <div class="modal-body">Nội dung ...</div>
+                        <!-- Modal footer -->
+                        <div class="modal-footer">
+                            <button class="btn btn-danger" data-bs-dismiss="modal">Đóng</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+
+    </div>
+
+    <!-- Content here -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/f4e3fc99b3.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
